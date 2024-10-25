@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>THE PERFECT PIE</title>
+  <link rel="stylesheet" type="text/css" href="stylesample.css">
+
+  <style>
+    /* Styles for the popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="sticky-header">
+
+    <div class="logo">
+      <img src="myimages/iconlogo.png" alt="Pizza Logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="pizza"><pre>Welcome to The Perfect Pie</pre></h1>
+      <p>Experience the Taste of Perfection</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <section id="about" class="about dark-theme">
+    <div class="about-content">
+      <h2>About</h2>
+      <p>Experience the finest gourmet pizza in a cozy and rustic atmosphere. At The Perfect Pie, we are dedicated to delivering exceptional 
+        flavors that will tantalize your taste buds.</p>
+      <p>Our chefs meticulously craft each pizza using locally sourced ingredients and unique flavor combinations. From juicy beef to mouthwatering
+         vegetarian options, there's something for everyone.</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+
+    <div class="about-image">
+      <img src="myimages/about.jpg" alt="About Image">
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+
+      <div class="menu-item">
+        <img src="myimages/img1.jpg" alt="Pizza 1">
+        <h3>Paneer Tikka Pizza</h3>
+        <p>Paneer Tikka Pizza is a delightful fusion of Italian and Indian flavours, making it one of the most beloved pizza types in India. 
+          This pizza seamlessly marries the creamy richness of paneer (Indian cottage cheese) with the smoky, spiced essence of traditional tikka.
+          As for sauce preferences, while classics such as marinara remain a popular choice, one can also opt for richer alternatives like alfredo 
+          or pesto which complement the cheesy goodness seeping from each slice beautifully.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="myimages/img2.jpg" alt="Pizza 2">
+        <h3>Tandoori Chicken Pizza</h3>
+        <p>Tandoori Chicken Pizza, a delectable pizza variation that combines the best of Indian and Italian cuisines. This pizza features 
+          succulent pieces of chicken, marinated in a yogurt-based blend of spices and herbs, and then cooked to perfection in a tandoor 
+          (clay oven). Among the best pizza types, this one is essentially an innovative take on traditional pies.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="myimages/img3.jpg" alt="Pizza 3">
+        <h3>Masala Pizza</h3>
+        <p>Masala Pizza is a flavourful Indian twist on the classic Italian favourite. It incorporates a medley of aromatic spices that add a zing 
+          to every bite. This pizza variation takes the traditional pizza and infuses it with a dash of Indian masala, elevating it to a whole new 
+          level of spiciness and flavour. The tomato sauce base is enhanced with a mix of Indian spices, including garam masala, cumin, and 
+          coriander, resulting in a rich and tangy flavour profile. </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="myimages/img4.jpg" alt="Pizza 4">
+        <h3>Stuffed Crust Pizza</h3>
+        <p>Looking towards the Stuffed Crust Pizza, things get exciting with crusts that are more than just edges – filled with oozy, gooey cheese!
+          When it comes to crust varieties for this type, you’ll typically find options ranging from classic wheat dough to more modern 
+          interpretations like pretzels or even bacon-infused creations. 
+          The secret behind its alluring appeal lies in the careful selection and stuffing technique of cheese into the crust. Pizza dough with 
+          cheese and other fillings (e.g., pepperoni, vegetables) stuffed into the crust.
+          </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="myimages/img5.jpg" alt="Pizza 5">
+        <h3>Classic Cheese Pizza</h3>
+        <p>It should be no shocker that a classic is the statistical favourite. Cheese pizza is one of the most popular choices. It will always be 
+          a simple, unadorned masterpiece on its own. Provolone, mozzarella, cheddar – these are just some cheeses commonly used due to their 
+          melt-in-your-mouth consistency when heated. </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="myimages/img6.jpg" alt="Pizza 6">
+        <h3>BBQ Chicken Pizza</h3>
+        <p>If you love BBQ chicken and you love pizza, why not put them together? It’s a very good choice of protein and this has long been a cult 
+          favourite of sports fans and college kids. The chicken slathered over the top of a pie gives it a tangy, sweet flavour that can’t be 
+          beaten. </p>
+      </div>
+
+      <div class="menu-item">
+        <img src="myimages/img7.jpg" alt="Pizza 7">
+        <h3>Veggie Delight Pizza</h3>
+        <p>When you want to jazz up your cheese pizza with colour and texture, veggies are the perfect topping. And you’re only limited by your 
+          imagination. Everything from peppers and mushrooms, to eggplant and onions make for an exciting and tasty veggie pizza. Toppings include 
+          a combination of bell peppers, onions, tomatoes and other vegetables.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="reservations" id="reservations">
+    <div class="reservation-form">
+      <h2>Make a Reservation</h2>
+
+      <form id="reservationForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="popup" id="popup">
+        Your booking has been reserved successfully!
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial">
+      <img src="myimages/customer1.jpeg" alt="Customer 1">
+      <p>"The pizza at The Perfect Pie are simply amazing! The flavors are rich, and the ingredients are always fresh. It's my go-to place
+         whenever I'm craving a delicious meal."</p>
+      <h4>Jane Smith</h4>
+    </div>
+    
+    <div class="testimonial">
+      <img src="myimages/customer2.jpg" alt="Customer 2">
+      <p>"The Perfect Pie never disappoints! The quality of their pizzas and the friendly service make it a top-notch dining experience. 
+        I highly recommend it to all pizza lovers!"</p>
+      <h4>George Jackson</h4>
+    </div>
+
+    <div class="testimonial">
+      <img src="myimages/customer3.jpg" alt="Customer 3">
+      <p>"Great experience in the contactless pickup. Kind, genuine service and yummy food! Our first time trying them- my son says it's "too 
+        good and the crust is yummy and toppings go all the way to the edges." Happy kids=Happy Mom.</p>
+      <h4>Allison Gavin</h4>
+    </div>
+
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="image-grid">
+
+      <div class="image-item">
+        <img src="myimages/gallery1.jpg" alt="Image 1">
+      </div>
+
+      <div class="image-item">
+        <img src="myimages/gallery2.jpg" alt="Image 2">
+      </div>
+
+      <div class="image-item">
+        <img src="myimages/gallery3.jpg" alt="Image 3">
+      </div>
+
+      <div class="image-item">
+        <img src="myimages/gallery4.jpg" alt="Image 4">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>123 Main Street, Solapur, India</p>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <p>+1 234 567 .</p>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>info@theperfectpie.com</p>
+        </div>
+
+      </div>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-logo">
+        <img src="myimages/iconlogo.png" alt="Logo">
+      </div>
+
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+    <p class="footer-text">&copy; The Perfect Pie. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const links = document.querySelectorAll('a[href^="#"]');
+      for (const link of links) {
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          targetElement.scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("reservationForm");
+      const popup = document.getElementById("popup");
+
+      form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Simulate form submission logic (you can replace this with actual submission logic)
+        setTimeout(function() {
+          // Display popup message
+          popup.style.display = "block";
+
+          // Reset form fields (optional)
+          form.reset();
+
+          // Hide popup after 3 seconds (3000 milliseconds)
+          setTimeout(function() {
+            popup.style.display = "none";
+          }, 3000);
+        }, 1000); // Simulating a delay of 1 second (1000 milliseconds) for demonstration purposes
+      });
+    });
+  </script>
